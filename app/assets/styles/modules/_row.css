@@ -13,6 +13,10 @@ $colWidth: 8.33%;
 
     }
 
+    &__b-margin-until-medium {
+      margin-bottom: 1rem;
+    }
+
     @mixin atMedium {
         &__col-medium-4 {
             float: left;
@@ -30,6 +34,10 @@ $colWidth: 8.33%;
 
         &__col-medium-8--smaller {
             width: 63%;
+        }
+
+        &__b-margin-until-medium {
+            margin-bottom: 0;
         }
     }
 
