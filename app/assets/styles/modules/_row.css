@@ -18,10 +18,18 @@ $colWidth: 8.33%;
             float: left;
             width: calc(4 * $colWidth);
         }
+
+        &__col-medium-4--larger {
+            width: 37%;
+        }
     
         &__col-medium-8 {
             float: left;
             width: calc(8 * $colWidth);
+        }
+
+        &__col-medium-8--smaller {
+            width: 63%;
         }
     }
 
