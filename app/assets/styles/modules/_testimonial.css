@@ -1,6 +1,16 @@
+.row > div:last-of-type .testimonial {
+    margin-bottom: 0;
+}
+
 .testimonial {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 0 1.8125rem 1px 1.8125rem;
+    padding: 0 18px;
+    margin-bottom: 98px;
+
+    @mixin atMedium {
+        padding: 0 1.8125rem 1px 1.8125rem;
+        margin-bottom: 0;
+    }
 
     &__photo {
         border-radius: 100%;
