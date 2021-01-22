@@ -23,7 +23,7 @@
         position: absolute;
         top: 0;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) translateY(-5%) scale(0.9);
         background-color: $mainBlue;
         padding: 13px 29px;
 
@@ -38,7 +38,7 @@
         opacity: 0;
         z-index: -10;
         position: relative;
-        padding-top: 90px;
+        padding-top: 80px;
         text-align: center;
         transition: all .3s ease-out;
 
