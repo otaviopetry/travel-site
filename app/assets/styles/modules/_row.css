@@ -68,7 +68,7 @@ $colWidth: 8.33%;
     }
 
     @mixin atLarge {
-        &__col-large-4 {
+        &__col-large-4:nth-child(2n+0) {
             float: left;
             width: calc(4 * $colWidth);
         }
