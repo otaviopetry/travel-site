@@ -14,7 +14,7 @@
         background-color: rgba($mainBlue, 0.3);
 
         &--dark {
-            background-color: rgba(23, 51, 72, .85);
+            background-color: rgba(23, 51, 72, .80);
         }
     }
 
