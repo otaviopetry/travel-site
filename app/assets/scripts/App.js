@@ -11,6 +11,8 @@ new RevealOnScroll(document.querySelectorAll('.testimonial'), 90);
 new StickyHeader();
 let modal;
 
+alert('Is this a rocket in your pocket?');
+
 document.querySelectorAll('.open-modal').forEach(element => {
   element.addEventListener('click', event => {
     event.preventDefault();
