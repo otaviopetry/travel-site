@@ -2,6 +2,7 @@ import '../styles/styles.css';
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
+import Modal from './modules/Modal';
 
 if (module.hot) {
     module.hot.accept();
@@ -14,3 +15,4 @@ new RevealOnScroll(document.querySelectorAll('.testimonial'), 90);
 
 
 let stickyHeader = new StickyHeader();
+new Modal();
