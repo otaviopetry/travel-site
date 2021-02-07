@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const fse = require('fs-extra');
 
 const postsCSSPlugins = [
     require('postcss-import'),
@@ -26,12 +27,18 @@ let cssConfig = {
   }]
 }
 
+let pages = fse.readdirSync('./app')
+  .filter(file => file.endsWith('.html'))
+  .map(page => {
+    return new HtmlWebpackPlugin({
+      filename: page,
+      template: `./app/${page}`
+    })
+  });
+
 let config = {
   entry: './app/assets/scripts/App.js',
-  plugins: [new HtmlWebpackPlugin({
-    filename: 'index.html',
-    template: './app/index.html'
-  })],
+  plugins: pages,
   module: {
     rules: [
       cssConfig
